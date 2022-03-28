@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'sshpass -p "naga" scp target/DemoATR.war naga@172.17.03:/opt/apache-tomcat-9.0.59/webapps'
+                sh 'sshpass -p "naga" scp target/DemoATR.war naga@172.17.0.3:/opt/apache-tomcat-9.0.59/webapps'
             }
         }
     }
